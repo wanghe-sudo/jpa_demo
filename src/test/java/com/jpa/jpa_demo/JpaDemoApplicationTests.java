@@ -20,7 +20,7 @@ class JpaDemoApplicationTests {
 
     @Test
     public void testAddUser() {
-        User build = User.builder().userContractAddress("0xB4EdDBEC54014f45093376DDb9f4F805B26efc79").referContractAddress("456").build();
+        User build = User.builder().userContractAddress("0xB4EdDBEC54014f45093376DDb9f4F805B26efc80").referContractAddress("456").build();
         User add = userService.save(build);
         System.out.println(add);
     }

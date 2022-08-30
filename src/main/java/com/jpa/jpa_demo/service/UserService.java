@@ -26,7 +26,7 @@ public class UserService {
         userRepo.findByUserContractAddress(userContractAddress);
     }
 
-    @InsertLog
+    @InsertLog("testValue")
     public User save(User user) {
         return userRepo.save(user);
     }
